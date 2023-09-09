@@ -45,7 +45,7 @@ public class Main
     {
         in  = System.in;
 
-        out = forSubmit ? System.out : new FileOutputStream("output.txt");
+        out = forSubmit ? System.out : new FileOutputStream("out.txt");
         
         br = new BufferedReader(new InputStreamReader(in));
         bw = new BufferedWriter(new OutputStreamWriter(out));
