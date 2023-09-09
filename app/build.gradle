@@ -1,0 +1,9 @@
+plugins {
+    id 'application'
+}
+
+task runTest(type: JavaExec){
+    mainClass = 'Main'
+    classpath = sourceSets.test.runtimeClasspath
+    standardInput = new FileInputStream(file('./in.txt'))
+}
